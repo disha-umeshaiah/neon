@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="stats-card">
+      <h2 class="neon-text">NeonFlow</h2>
+      <div class="total-label">Spent Today</div>
+      <div id="total" class="total-amount">£0.00</div>
+    </div>
+
+    <div class="input-group">
+      <input type="number" id="dailyBudget" placeholder="Set Daily Budget (£)" class="budget-input">
+      <input type="number" id="amount" placeholder="Transaction Amount (£)">
+      <input type="text" id="desc" placeholder="Description (e.g. Coffee)">
+      <button id="saveBtn">Log Expense</button>
+    </div>
+
+    <div class="footer">
+      <button id="exportBtn" class="secondary-btn">Export CSV</button>
+      <button id="clearBtn" class="secondary-btn">Reset Data</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+:root {
+  --neon-pink: #ff007f;
+  --neon-blue: #00f2ff;
+  --bg-dark: #050505;
+  --glass: rgba(255, 255, 255, 0.03);
+}
+
+body { width: 340px; background: var(--bg-dark); color: white; font-family: 'Inter', sans-serif; margin: 0; }
+.container { padding: 20px; background: radial-gradient(circle at top right, #1a0510, #050505); }
+.neon-text { color: var(--neon-pink); text-shadow: 0 0 10px var(--neon-pink); text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0; }
+
+.stats-card {
+  background: var(--glass);
+  border: 1px solid rgba(255, 0, 127, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  margin-bottom: 15px;
+}
+
+.total-amount { font-size: 2.2em; font-weight: bold; text-shadow: 0 0 15px rgba(255, 255, 255, 0.2); }
+
+input {
+  width: 100%; padding: 10px; margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid #333;
+  border-radius: 8px; color: white; box-sizing: border-box;
+}
+
+input:focus { outline: none; border-color: var(--neon-pink); box-shadow: 0 0 8px var(--neon-pink); }
+
+.budget-input { border-color: var(--neon-blue); margin-bottom: 20px; }
+
+button {
+  width: 100%; padding: 12px; border-radius: 8px; border: none;
+  background: var(--neon-pink); color: white; font-weight: bold;
+  cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);
+}
+
+button:hover { transform: translateY(-2px); box-shadow: 0 0 25px var(--neon-pink); }
+
+.footer { display: flex; gap: 10px; margin-top: 15px; }
+.secondary-btn { background: transparent; border: 1px solid #444; font-size: 0.8em; }
+.secondary-btn:hover { color: var(--neon-blue); border-color: var(--neon-blue); }
